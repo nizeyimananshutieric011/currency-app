@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+    
+        <h1>CURRENCY EXCHANGE WEB SYSTEM</h1>
+    </header>
+
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a class="active" href="converter.html">Converter</a>
+        <a href="details.html">Details</a>
+        <a href="history.html">History</a>
+        <a href="settings.html">Settings</a>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <h2>💱 Currency Converter</h2>
+
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" placeholder="Enter amount" value="100">
+
+            <label for="from">From</label>
+            <select id="from">
+                <option value="USD">USD - US Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - British Pound</option>
+                <option value="RWF">RWF - Rwandan Franc</option>
+            </select>
+
+            <button type="button" class="btn-secondary" onclick="swapCurrencies()">↔️ Swap</button>
+
+            <label for="to">To</label>
+            <select id="to">
+                <option value="RWF">RWF - Rwandan Franc</option>
+                <option value="USD">USD - US Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - British Pound</option>
+            </select>
+
+            <button type="button" onclick="convert()">Convert</button>
+
+            <div class="result-box">
+                <h3 id="result">0.00</h3>
+                <p id="rate">Rate: --</p>
+                <p id="time">Updated: --</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 CurrencyX</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

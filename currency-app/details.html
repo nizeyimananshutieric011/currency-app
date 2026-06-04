@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>CURRENCY EXCHANGE WEB SYSTEM</h1>
+    </header>
+
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="converter.html">Converter</a>
+        <a class="active" href="details.html">Details</a>
+        <a href="history.html">History</a>
+        <a href="settings.html">Settings</a>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <h2>📈 Currency Details & Trends</h2>
+            <p><strong>Base Currency:</strong> USD (US Dollar)</p>
+            
+            <div class="chart-box">
+                <span style="color: var(--primary-color);">📊 Market Trends:</span> ▁▂▃▄▅▆▇ 100% Up
+            </div>
+
+            <h3>Current Rates (Compared to 1 USD)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Exchange Rate</th>
+                    </tr>
+                </thead>
+                <tbody id="detailsTableBody">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 CurrencyX</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

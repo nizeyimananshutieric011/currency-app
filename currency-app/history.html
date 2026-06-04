@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>History</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>CURRENCY EXCHANGE WEB SYSTEM</h1>
+    </header>
+
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="converter.html">Converter</a>
+        <a href="details.html">Details</a>
+        <a class="active" href="history.html">History</a>
+        <a href="settings.html">Settings</a>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <h2>📜 Conversion History</h2>
+
+            <input type="text" id="filter" placeholder="Search by currency (e.g. USD, RWF)..." onkeyup="renderHistory()">
+            <br><br>
+
+            <button type="button" class="btn-danger" onclick="clearHistory()">🗑 Clear History</button>
+
+            <div style="overflow-x: auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Amount</th>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Result</th>
+                            <th>Date & Time</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 CurrencyX</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

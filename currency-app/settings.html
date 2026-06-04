@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Settings</title>
+<link rel="stylesheet" href="CSS/style.css">
+<header>
+
+    <h1>CURRENCY EXCHANGE WEB SYSTEM</h1>
+</header>
+</head>
+<body>
+<nav class="nav">
+<a href="index.html" data-translate="navHome">Home</a>
+<a href="converter.html" data-translate="navConverter">Converter</a>
+<a href="details.html" data-translate="navDetails">Details</a>
+<a href="history.html" data-translate="navHistory">History</a>
+<a class="active" href="settings.html" data-translate="navSettings">Settings</a>
+</nav>
+
+<div class="container">
+<div class="card">
+<h2 data-translate="cardSettings">⚙️ Settings</h2>
+
+<button onclick="toggleTheme()" data-translate="btnTheme">🌙 Toggle Dark / Light</button>
+
+<br><br>
+
+<label data-translate="labelDefaultCurr">Default Currency</label>
+<select id="defaultCurrency" onchange="saveDefaultCurrency()">
+<option>USD</option>
+<option>EUR</option>
+<option>GBP</option>
+<option>RWF</option>
+</select>
+
+<br><br>
+
+<label data-translate="labelLang">Language</label>
+<select id="languageSelect" onchange="changeLanguage()">
+<option value="en">English</option>
+<option value="rw">Kinyarwanda</option>
+</select>
+
+</div>
+</div>
+  <footer>
+        <p>© 2026 CurrencyX</p>
+    </footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
